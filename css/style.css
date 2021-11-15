@@ -1,0 +1,385 @@
+:root{
+    --bg-color:#090B0A;
+    --prim-color:#3C3C3C;
+    --sec-color:#FFFFFF;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+/* VISTA MOBILE */
+
+@media only screen and (min-width: 0px) and (max-width: 768px) {
+.gridContainer{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 100vh 800px 800px 200px 100px;
+    grid-template-areas:
+    "header"
+    "background"
+    "section"
+    "aside"
+    "contacto"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    padding: 0;
+    margin: 0;
+    background-color: var(--bg-color);
+}
+
+section{
+    grid-area: section;
+}
+
+aside{
+    grid-area: aside;
+}
+
+.contacto{
+    grid-area: contacto;
+}
+
+footer{
+    grid-area: footer;
+}
+
+.white-Logo{
+    width: 200px;
+}
+
+.fondo_p{
+    background-image: url(/assets/imgs/background7.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    z-index: -8;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: -30px;
+}
+
+nav{
+    position: absolute;
+    left: 1000px;
+}
+
+.formas{
+    position: absolute;
+    left: 1000px;
+}
+
+.micBg{
+    position: absolute;
+    left: 1000px;
+}
+
+
+
+section h2{
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+.card__tecnicas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card__tec img{
+    width: 24px;
+}
+
+.card__tec h3{
+    font-size: 16px;
+}
+
+.card__tec p{
+    font-size: 14px;
+}
+
+.card__tec{
+    background-color: var(--prim-color);
+    text-align: center;
+    color: white;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 20px;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.3);
+}
+
+.flexAside{
+    display: flex;
+    flex-direction: column;
+}
+
+.imgEstudio img{
+    width: 350px;
+}
+
+.imgEstudio{
+    display: flex;
+    justify-content: center;
+}
+
+.textEstudio h2{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cardTxtEstudio img{
+    width: 24px;
+}
+
+.flexCards{
+    display: flex;
+    flex-direction: row;
+}
+
+.cardTxtEstudio{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--prim-color);
+    padding: 15px;
+    margin: 15px;
+    color: white;
+    border-radius: 4px;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+
+
+}
+
+/* VISTA DESKTOP */
+
+@media only screen and (min-width: 1024px) {
+    .white-Logo{
+        width: 250px;
+        }
+        
+        .logo{
+        margin-left: 50px;
+        }
+        
+        nav{
+            margin-top: 35px;
+        }
+        
+        a{
+            text-decoration: none;
+            padding: 2px;
+            color: white;
+        }
+        
+        header{
+            width: 100%;
+            /*background-color: var(--bg-color);*/
+            position: fixed;
+            top: 0px;
+            display: flex;
+            justify-content: space-between;
+            transition: 0.6s;
+        }
+        
+        header.sticky{
+            background-color: var(--bg-color)
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            width: 600px;
+            justify-content: space-around;
+        }
+        
+        nav li a {
+            color: white;
+            display: block;
+            text-decoration: none;
+        }
+        
+        nav li{
+            flex-grow: 1;
+            text-align: center;
+        }
+        
+        ul li{
+            list-style-type:none;
+        }
+        
+        nav li a:hover {
+            color: tomato;
+            text-decoration: underline;
+        }
+        
+        section{
+            margin-top: 100px;
+            background-color: #FFFFFF;
+            color: black;
+        }
+        
+        section h2{
+            font-size: 35px;
+        }
+        
+        aside{
+            background-color: var(--sec-color);
+            color: black;
+        }
+        
+        .card__tecnicas{
+            height: 400px;
+            margin-top: 40px;
+            background-color: var(--prim-color);
+            display: flex;
+            align-items: center;
+        }
+        
+        .card__tec{
+            margin: 50px 25px;
+            background-color: var(--sec-color);
+            color: var(--bg-color);
+            height: 200px;
+            border-radius: 4px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .card__tec img{
+            width: 50px;
+        }
+        
+        body{
+            text-align: center;
+            /*background-image: url(/assets/imgs/background.png);*/
+            color: white;
+        }
+        
+        .contacto{
+            margin-top: 50px;
+            background-color: var(--prim-color);
+            height: 150px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        footer{
+            display: flex;
+            background-color: var(--bg-color);
+            height: 150px;
+            justify-content: space-evenly;
+        }
+        
+        .redes{
+        display: flex;
+        align-items: center;
+        width: 200px;
+        justify-content: space-between;
+        }
+        
+        .footerLogo{
+        display: flex;
+        align-items: center;
+        }
+        
+        
+        #Oval-1{
+            fill: white;
+        }
+        
+        .fondo_p{
+            width: 100%;
+            height: 100vh;
+            background-image: url(/assets/imgs/background7.png);
+            background-position: center;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+        
+        .micBg{
+        position: absolute;
+        top: 286px;
+        left: 800px;
+        }
+        
+        .formas img{
+            position: absolute;
+            height: 100vh;
+            top: 0px;
+            right: 0px;
+        }
+        
+        .flexAside{
+            margin-top: 58px;
+            display: flex;
+        }
+        
+        .textEstudio{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        .flexEstudio{
+            display: flex;
+            flex-direction: row;
+            height: 350px;
+        }
+        
+        .imgEstudio{
+            margin-left: 25px;
+        }
+        
+        .flexCards{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+        
+        .flexCards img{
+            width: 50px;
+        }
+        
+        .btn{
+            width: 125px;
+            height: 35px;
+            text-align: center;
+            border: none;
+            color:white;
+            background-color: #090B0A;
+            border-radius: 3px;
+            box-shadow: inset 0 0 0 0 #FFFFFF;
+            transition: ease-out 0.3s;
+            font-size: 15px;
+            outline: none;
+        }
+        
+        .btn:hover{
+            cursor: pointer;
+            box-shadow: inset 125px 0 0 0 #FFFFFF;
+            color: #3C3C3C;
+        }
+        
+}
