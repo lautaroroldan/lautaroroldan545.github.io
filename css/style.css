@@ -16,13 +16,13 @@
 .gridContainer{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 100vh 700px 800px 200px 100px;
+    grid-template-rows: 100px 100vh 700px 800px 250px 100px;
     grid-template-areas:
     "header"
     "background"
     "section"
     "aside"
-    "contacto"
+    "contact"
     "footer";
 }
 
@@ -42,7 +42,7 @@ aside{
 }
 
 .contacto{
-    grid-area: contacto;
+    grid-area: contact;
 }
 
 footer{
@@ -164,8 +164,33 @@ section h2{
     font-size: 14px;
 }
 
+.contacto {
+    background-color: var(--prim-color);
+    margin-top: 40px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
 
 
+.contacto h2{
+    font-size: 24px;
+    margin-top: 8px;
+}
+
+.contacto p{
+    font-size: 14px;
+}
+
+.btn{
+    width: 150px;
+    height: 30px;
+    background-color: white;
+    border-radius: 4px;
+    color: black;
+}
 
 
 }
