@@ -47,6 +47,9 @@ aside{
 
 footer{
     grid-area: footer;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: space-around;
 }
 
 .white-Logo{
@@ -192,6 +195,25 @@ section h2{
     color: black;
 }
 
+#Oval-1{
+    fill: white;
+}
+
+.redes{
+display: flex;
+align-items: center;
+width: 150px;
+justify-content: space-around;
+}
+
+.redes a svg{
+    width: 30px;
+}
+
+.footerLogo{
+    display: flex;
+    align-items: center;
+}
 
 }
 
