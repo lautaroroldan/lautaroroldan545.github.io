@@ -16,7 +16,7 @@
 .gridContainer{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 100vh 700px 800px 250px 100px;
+    grid-template-rows: 100px 100vh 800px 950px 250px 100px;
     grid-template-areas:
     "header"
     "background"
@@ -35,6 +35,10 @@ header{
 
 section{
     grid-area: section;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100vw;
 }
 
 aside{
@@ -94,7 +98,6 @@ section h2{
     font-size: 18px;
     text-align: center;
     margin-top: 20px;
-    margin-left: auto;
 }
 
 .card__tecnicas{
@@ -131,7 +134,7 @@ section h2{
 }
 
 .imgEstudio img{
-    width: 350px;
+    width: 100vw;
 }
 
 .imgEstudio{
@@ -282,7 +285,9 @@ justify-content: space-around;
         section{
             margin-top: 100px;
             background-color: #FFFFFF;
+
             color: black;
+            
         }
         
         section h2{
