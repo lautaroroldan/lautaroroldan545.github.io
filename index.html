@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Carolina Belen</title>
 </head>
 <body>
@@ -37,7 +37,7 @@
         <section>
             <h2>Técnicas vocales utilizadas en las clases </h2>
             <div class="card__tecnicas">
-                <div class="card__tec">
+                <div class="card__tec ">
                     <img src="/assets/imgs/falsete2.png" alt="icono">
                     <h3>Vibrato</h3>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor aspernatur consectetur natus doloribus ratione temporibus!</p>
@@ -112,6 +112,10 @@
             var header = document.querySelector("header");
             header.classList.toggle("sticky", window.scrollY > 0);
         })
+    </script>
+    <script src="/js/wow.min.js"></script>
+    <script>
+    new WOW().init();
     </script>
 </body>
 </html>
