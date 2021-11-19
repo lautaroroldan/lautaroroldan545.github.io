@@ -225,25 +225,25 @@ justify-content: space-around;
 /* VISTA DESKTOP */
 
 @media only screen and (min-width: 1024px) {
-    .white-Logo{
+.white-Logo{
         width: 250px;
-        }
-        
-        .logo{
+}
+
+.logo{
         margin-left: 50px;
-        }
-        
-        nav{
+}
+
+nav{
             margin-top: 35px;
-        }
-        
-        a{
+}
+
+a{
             text-decoration: none;
             padding: 2px;
             color: white;
-        }
-        
-        header{
+}
+
+header{
             width: 100%;
             /*background-color: var(--bg-color);*/
             position: fixed;
@@ -251,65 +251,63 @@ justify-content: space-around;
             display: flex;
             justify-content: space-between;
             transition: 0.6s;
-        }
-        
-        header.sticky{
+}
+
+header.sticky{
             background-color: var(--bg-color)
-        }
-        
-        nav ul {
+}
+
+nav ul {
             list-style: none;
             display: flex;
             width: 600px;
             justify-content: space-around;
-        }
-        
-        nav li a {
+}
+
+nav li a {
             color: white;
             display: block;
             text-decoration: none;
-        }
-        
-        nav li{
+}
+
+nav li{
             flex-grow: 1;
             text-align: center;
-        }
-        
-        ul li{
+}
+
+ul li{
             list-style-type:none;
-        }
-        
-        nav li a:hover {
+}
+
+nav li a:hover {
             color: tomato;
             text-decoration: underline;
-        }
-        
-        section{
+}
+
+section{
             margin-top: 100px;
             background-color: #FFFFFF;
-
             color: black;
-            
-        }
-        
-        section h2{
+}
+
+section h2{
             font-size: 35px;
-        }
-        
-        aside{
+}
+
+aside{
             background-color: var(--sec-color);
             color: black;
-        }
-        
-        .card__tecnicas{
+}
+
+.card__tecnicas{
             height: 400px;
             margin-top: 40px;
             background-color: var(--prim-color);
             display: flex;
             align-items: center;
-        }
-        
-        .card__tec{
+}
+
+.card__tec{
             margin: 50px 25px;
             background-color: var(--sec-color);
             color: var(--bg-color);
@@ -319,122 +317,120 @@ justify-content: space-around;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-        }
-        
-        .card__tec img{
+}
+
+.card__tec img{
             width: 50px;
-        }
-        
-        body{
+}
+
+body{
             text-align: center;
             /*background-image: url(/assets/imgs/background.png);*/
             color: white;
-        }
-        
-        .contacto{
+}
+
+.contacto{
             margin-top: 50px;
             background-color: var(--prim-color);
             height: 150px;
             display: flex;
             flex-direction: column;
             justify-content: center;
-        }
-        
-        footer{
+            align-items: center;
+}
+
+footer{
             display: flex;
             background-color: var(--bg-color);
             height: 150px;
             justify-content: space-evenly;
-        }
-        
-        .redes{
+}
+
+.redes{
         display: flex;
         align-items: center;
         width: 200px;
         justify-content: space-between;
-        }
-        
-        .footerLogo{
+}
+
+.footerLogo{
         display: flex;
         align-items: center;
-        }
-        
-        
-        #Oval-1{
+}
+
+
+#Oval-1{
             fill: white;
-        }
-        
-        .fondo_p{
+}
+
+.fondo_p{
             width: 100%;
             height: 100vh;
             background-image: url(/assets/imgs/background7.png);
             background-position: center;
             background-size: cover;
             background-attachment: fixed;
-        }
-        
-        .micBg{
+}
+
+.micBg{
         position: absolute;
         top: 286px;
         left: 800px;
-        }
-        
-        .formas img{
+}
+
+.formas img{
             position: absolute;
             height: 100vh;
             top: 0px;
             right: 0px;
-        }
-        
-        .flexAside{
+}
+
+.flexAside{
             margin-top: 58px;
             display: flex;
-        }
-        
-        .textEstudio{
+}
+
+.textEstudio{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-        }
-        
-        .flexEstudio{
+}
+
+.flexEstudio{
             display: flex;
             flex-direction: row;
             height: 350px;
-        }
-        
-        .imgEstudio{
+}
+
+.imgEstudio{
             margin-left: 25px;
-        }
-        
-        .flexCards{
+}
+
+.flexCards{
             display: flex;
             flex-direction: column;
             justify-content: space-around;
-        }
-        
-        .flexCards img{
+}
+
+.flexCards img{
             width: 50px;
-        }
-        
-        .btn{
-            width: 125px;
-            height: 35px;
+}
+
+.btn{
             text-align: center;
-            border: none;
-            color:white;
+            color:#FFFFFF;
             background-color: #090B0A;
-            border-radius: 3px;
-            box-shadow: inset 0 0 0 0 #FFFFFF;
-            transition: ease-out 0.3s;
+            border-radius: 4px;
             font-size: 15px;
-            outline: none;
-        }
-        
-        .btn:hover{
-            cursor: pointer;
-            box-shadow: inset 125px 0 0 0 #FFFFFF;
-            color: #3C3C3C;
-        }
-        
+            padding: 5px 10px;
+}
+
+.redes a svg{
+transition: all 1.5s;
+}
+
+.redes a svg:hover{
+transform: rotate(360deg);
+}
+
 }
