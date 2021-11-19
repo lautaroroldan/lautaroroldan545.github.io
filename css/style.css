@@ -16,7 +16,7 @@
 .gridContainer{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 100vh 800px 950px 250px 100px;
+    grid-template-rows: 100px 100vh auto auto 250px 100px;
     grid-template-areas:
     "header"
     "background"
@@ -43,6 +43,8 @@ section{
 
 aside{
     grid-area: aside;
+    height: auto;
+    margin: 25px 0px;
 }
 
 .contacto{
@@ -172,7 +174,6 @@ section h2{
 
 .contacto {
     background-color: var(--prim-color);
-    margin-top: 40px;
     color: white;
     text-align: center;
     display: flex;
@@ -188,6 +189,7 @@ section h2{
 
 .contacto p{
     font-size: 14px;
+    margin: 0px 12px;
 }
 
 .btn{
