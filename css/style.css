@@ -2,6 +2,7 @@
     --bg-color:#090B0A;
     --prim-color:#3C3C3C;
     --sec-color:#FFFFFF;
+    --btn-color: #3f13a4;
 }
 
 *{
@@ -47,10 +48,6 @@ aside{
     margin: 25px 0px;
 }
 
-.contacto{
-    grid-area: contact;
-}
-
 footer{
     grid-area: footer;
     background-color: var(--bg-color);
@@ -94,12 +91,12 @@ nav{
     display: none;
 }
 
-
-
 section h2{
-    font-size: 18px;
+    font-size: 20px;
     text-align: center;
     margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 5px;
 }
 
 .card__tecnicas{
@@ -179,6 +176,8 @@ section h2{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
+    grid-area: contact;
 }
 
 
@@ -195,9 +194,11 @@ section h2{
 .btn{
     width: 150px;
     height: 30px;
-    background-color: white;
+    background-color: var(--sec-color);
     border-radius: 4px;
     color: black;
+    text-decoration: none;
+    text-align: center;
 }
 
 #Oval-1{
@@ -230,11 +231,11 @@ justify-content: space-around;
 }
 
 .logo{
-        margin-left: 50px;
+    margin-left: 50px;
 }
 
 nav{
-            margin-top: 35px;
+    margin-top: 35px;
 }
 
 a{
@@ -358,7 +359,6 @@ footer{
         align-items: center;
 }
 
-
 #Oval-1{
             fill: white;
 }
@@ -373,9 +373,13 @@ footer{
 }
 
 .micBg{
+        background-image: url(/assets/imgs/Mic\ background.svg);
+        background-repeat: no-repeat;
+        height: 600px;
+        width: 650px;
         position: absolute;
-        top: 286px;
-        left: 800px;
+        bottom: 0px;
+        right: 470px;
 }
 
 .formas img{
@@ -418,8 +422,8 @@ footer{
 
 .btn{
             text-align: center;
-            color:#FFFFFF;
-            background-color: #090B0A;
+            color: white;
+            background-color: var(--bg-color);
             border-radius: 4px;
             font-size: 15px;
             padding: 5px 10px;
