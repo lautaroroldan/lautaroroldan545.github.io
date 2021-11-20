@@ -225,7 +225,7 @@ justify-content: space-around;
 
 /* VISTA DESKTOP */
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 1280px) {
 .white-Logo{
         width: 250px;
 }
@@ -293,6 +293,7 @@ section{
 
 section h2{
             font-size: 35px;
+            text-align: center;
 }
 
 aside{
@@ -318,6 +319,10 @@ aside{
             flex-direction: column;
             align-items: center;
             justify-content: center;
+}
+
+.card__tec p{
+    text-align: center;
 }
 
 .card__tec img{
@@ -397,13 +402,21 @@ footer{
 .textEstudio{
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            justify-content: space-evenly;
+}
+
+.textEstudio h2{
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cardTxtEstudio p{
+    text-align: center;
 }
 
 .flexEstudio{
             display: flex;
             flex-direction: row;
-            height: 350px;
 }
 
 .imgEstudio{
@@ -413,7 +426,8 @@ footer{
 .flexCards{
             display: flex;
             flex-direction: column;
-            justify-content: space-around;
+            padding: 0px 10px;
+            overflow: hidden;
 }
 
 .flexCards img{
@@ -435,6 +449,213 @@ transition: all 1.5s;
 
 .redes a svg:hover{
 transform: rotate(360deg);
+}
+
+}
+
+/* VERSION TABLET */
+@media only screen and (min-width: 769px) and (max-width: 1279px){
+
+.gridContainer{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 100px 100vh auto auto auto 100px;
+        grid-template-areas:
+        "header"
+        "background"
+        "section"
+        "aside"
+        "contact"
+        "footer";
+}
+
+header{
+        grid-area: header;
+        padding: 0;
+        margin: 0;
+        background-color: var(--bg-color);
+}
+
+aside{
+        grid-area: aside;
+        height: auto;
+        margin: 25px 0px;
+}
+
+footer{
+        grid-area: footer;
+        background-color: var(--bg-color);
+        display: flex;
+        justify-content: space-around;
+}
+
+.white-Logo{
+        width: 200px;
+}
+
+.fondo_p{
+        background-image: url(/assets/imgs/background7.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: scroll;
+        background-size: cover;
+        width: 100%;
+        height: 100vh;
+        z-index: -8;
+}
+
+.logo{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: -20px;
+}
+
+nav{
+        display: none;
+}
+
+.formas{
+        display: none;
+        bottom: 0;
+        right: 0;
+}
+
+.micBg{
+        display: none;
+}
+
+.card__tecnicas{
+    height: 400px;
+    margin-top: 40px;
+    background-color: var(--prim-color);
+    display: flex;
+    align-items: center;
+}
+
+.card__tec{
+    margin: 50px 25px;
+    background-color: var(--sec-color);
+    color: var(--bg-color);
+    height: 200px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card__tec img{
+    width: 50px;
+}
+
+.card__tec p{
+    text-align: center;
+}
+
+section{
+    margin-top: 100px;
+    background-color: #FFFFFF;
+    color: black;
+}
+
+section h2{
+    font-size: 35px;
+    text-align: center;
+}
+
+.flexAside{
+        display: flex;
+        flex-direction: column;
+}
+
+.imgEstudio img{
+        width: 100vw;
+}
+
+.imgEstudio{
+        display: flex;
+        justify-content: center;
+}
+
+.textEstudio h2{
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+}
+
+.cardTxtEstudio img{
+        width: 24px;
+}
+
+.flexCards{
+        display: flex;
+        flex-direction: row;
+}
+
+.cardTxtEstudio{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--prim-color);
+        padding: 15px;
+        margin: 15px;
+        color: white;
+        border-radius: 4px;
+        align-items: center;
+        text-align: center;
+        font-size: 14px;
+}
+
+.contacto{
+    margin-top: 25px;
+    background-color: var(--prim-color);
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.contacto h2{
+        font-size: 24px;
+        margin-top: 8px;
+}
+
+.contacto p{
+        font-size: 14px;
+        margin: 0px 12px;
+}
+
+.btn{
+    text-align: center;
+    color: white;
+    background-color: var(--bg-color);
+    border-radius: 4px;
+    font-size: 15px;
+    padding: 5px 10px;
+    text-decoration: none;
+}
+
+#Oval-1{
+        fill: white;
+}
+
+.redes{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: space-around;
+}
+
+.redes a svg{
+        width: 30px;
+}
+
+.footerLogo{
+        display: flex;
+        align-items: center;
 }
 
 }
