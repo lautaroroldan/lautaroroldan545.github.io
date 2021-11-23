@@ -252,6 +252,7 @@ header{
             display: flex;
             justify-content: space-between;
             transition: 0.6s;
+            z-index: 3;
 }
 
 header.sticky{
@@ -480,6 +481,113 @@ transform: rotate(360deg);
 }
 
 /* ---- Sobre mi Page ----*/
+
+/* .gridContainerMe{
+
+} */
+
+.bgMe{
+    width: 100%;
+    height: 100vh;
+    background-image: url(/assets/imgs/background7.png);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    z-index: -2;
+}
+
+.blur{
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(4px);
+    background-color: rgba(155, 155,155, 0.00001);
+    z-index: -1;
+}
+
+.bgMe__Img{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    top: 33%;
+    justify-content: space-evenly;
+    overflow: hidden;
+}
+
+.bg_CaroImg img{
+    border-radius: 1000px;
+    width: 350px;
+    border: 2px solid #FFFFFF;
+}
+
+.bg_CaroText{
+    display: flex;
+    align-items: center;
+}
+
+.bg_text{
+    font-family: 'Raleway', sans-serif;
+    font-size: 35px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.emoji::before{
+    content: "\1F44B";
+    font-size: 35px;
+}
+
+.sectionMe h2{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.sectionMe {
+    display: flex;
+    flex-direction: column;
+    height: 24rem;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.cardM__Hb{
+    display: flex;
+}
+
+.card__Hb img{
+    width: 48px;
+}
+
+.card__Hb h3{
+    text-transform: uppercase;
+}
+
+.card__Hb h3, .card__Hb img , .card__Hb p{
+    padding: 5px;
+}
+
+.card__Hb{
+    padding: 0px 20px;
+    background-color: rgba(86, 11, 173,0.7);
+    border-radius: 15px 0px;
+    margin: 0px 1rem;
+}
+
+.asideMe{
+    margin-top: 6rem;
+}
+
+.asideMe iframe{
+    border-radius: 20px;
+    box-shadow: 10px 10px 14px -3px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 10px 10px 14px -3px rgba(0,0,0,0.47);
+    -moz-box-shadow: 10px 10px 14px -3px rgba(0,0,0,0.47);;
+}
 
 
 }
