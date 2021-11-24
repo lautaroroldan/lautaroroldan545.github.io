@@ -318,6 +318,7 @@ section{
             margin-top: 100px;
             background-color: #FFFFFF;
             color: black;
+            grid-area: section;
 }
 
 section h2{
@@ -591,41 +592,68 @@ transform: rotate(360deg);
 
 /* Contacto Page */
 
+.gridContainerContacto{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
+}
+
+.bgContactHeader{
+    width: 100%;
+    height: 12vh;
+    background-color: #090B0A;
+}
+
 .bgContact{
     width: 100%;
-    height: 100vh;
+    height: 40vh;
+    background-image: url(/assets/imgs/estudio.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: #3f13a4;
+    background-blend-mode: multiply;
     position: relative;
     z-index: -2;
 }
 
+.bgContactTxt h2{
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.bgContactTxt{
+    position: absolute;
+    top: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
 .sectionContact__Conteiner{
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
-    height: 100%;
-    padding: 20px 100px;
+    margin-top: 2rem;
+    margin-bottom: 2.5rem;
+    padding: 0px 100px;
 }
 
 .sectionContact__Box{
-    max-width: 850px;
+    width: 1200px;
+    /* max-width: 950px; */
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(1,1fr);
     text-align: center;
     background-color: white;
+    padding: 35px;
 }
 
-.sectionContact__Left{
-    height: 100%;
-    background-image: url("https://us.123rf.com/450wm/tzido/tzido1611/tzido161100527/66206623-profesional-condensador-estudio-de-micr%C3%B3fono-sobre-la-foto-abstracta-borrosa-de-estudio-de-m%C3%BAsica-de.jpg?ver=6");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.sectionContact__Right{
+.sectionContact__Form{
     padding: 25px 40px;
 }
 
@@ -633,6 +661,7 @@ form h3{
     position: relative;
     padding-bottom: 10px;
     margin-bottom: 10px;
+    font-size: 1.5rem;
 }
 
 form h3::after{
@@ -644,34 +673,35 @@ form h3::after{
     height: 4px;
     border-radius: 2px;
     background-color: #f72585;
-    width: 50px;
+    width: 5rem;
 }
 
 .field, .txtArea{
     width: 100%;
-    background-color: rgba(230, 230, 230, 0.6);
+    /* background-color: rgba(122, 122, 122, 0.3); */
     padding: 0.5rem 0rem;
     font-size: 1.1rem;
     margin-bottom: 22px;
     outline: none;
-    border: 2px solid rgba(0, 0, 0, 0);
-    transition: 0.3s;
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid silver;
+    transition: all 0.3s ease;
 }
 
-.field:hover{
-    background-color: rgba(0, 0, 0, 0.1);
+.field::placeholder, .txtArea::placeholder{
+    color: rgba(0,0,0,0.47);
 }
 
 .field:focus{
     background-color: #FFFFFF;
-    border: 1px solid #f72585;
+    border-bottom: 2px solid #f72585;
 }
+
 
 .txtArea{
     min-height: 150px;
     max-height: 350px;
-    min-width: 350px;
-    max-width: 450px;
+    resize: none;
 }
 
 .submitBtn{
@@ -683,11 +713,25 @@ form h3::after{
     color: white;
     outline: none;
     border: 2px solid rgba(0, 0, 0, 0);
+    transition: background-color .3s;
 }
 
 .submitBtn:hover{
     background-color: #D90866;
 }
+
+/*  Proyectos Page  */
+
+.gridContainerFeedback{
+}
+
+
+
+
+
+
+
+
 
 
 
