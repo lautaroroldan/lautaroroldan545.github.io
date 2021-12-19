@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <title>Carolina Belen</title>
 </head>
 <body>
@@ -26,11 +26,45 @@
             </nav>
         </header>
 
-        <div class="bgContactHeader"></div>
-        <div class="bgContact"></div>
-        <div class="bgContactTxt">
-            <h2>Feedback</h2>
+        <div class="bgFeedback">
+            <div class="bgContactHeader"></div>
+            <div class="bgContact"></div>
+            <div class="bgContactTxt">
+                <h2>Feedback</h2>
+            </div>
         </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="testimonialBox">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            </div>
+
 
         <footer class="footerFeedback">
             <a class="footerLogo" href="index.html"><img class="white-Logo" src="/assets/imgs/white-logo.png" alt="Icono Carolina Belen"></a>
@@ -46,6 +80,30 @@
                     </svg></a>
             </div>
         </footer>
+
     </div>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
+<script>
+        var swiper = new Swiper(".mySwiper", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows: true,
+            },
+            pagination: {
+            el: ".swiper-pagination",
+            },
+    });
+</script>
+
 </body>
 </html>
