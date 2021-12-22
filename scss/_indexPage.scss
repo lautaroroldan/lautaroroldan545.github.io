@@ -6,7 +6,7 @@ section{
         justify-content: center;
         align-items: center;
         h2{
-        font-size: 22px;
+        font-size: 2rem;
         text-align: center;
         margin-top: 1.5em;
         margin-bottom: 1.5em;
@@ -30,16 +30,16 @@ section{
         max-width: 650px;
         flex-grow: 1;
         flex-basis: 0; // FALTA CONSULTAR SI PONER BASIS 0 o 1
-        p {
-                font-size: 16px;
-                font-weight: 300;
-        }
-        h3 {
-                font-size: 18px;
-                font-weight: 500;
-        }
         img {
                 width: 24px;
+        }
+        h3 {
+                font-size: 1.5rem;
+                font-weight: 500;
+        }
+        p {
+                font-size: 14px;
+                font-weight: 300;
         }
 }
 }
@@ -54,10 +54,10 @@ section{
         grid-area: contact;
         padding: 2.5em 0;
         h2{
-                font-size: 20px;
+                font-size: 1.8rem;
         }
         p{
-                font-size: 15px;
+                font-size: 14px;
                 margin: 0.6em 0.8em 1em;
         }
         .btn{
@@ -87,7 +87,7 @@ aside{
                 }
                 .textEstudio h2{
                 margin-top: 1.5em;
-                font-size: 20px;
+                font-size: 2rem;
                 text-align: center;
                 }
                 .flexCards{
@@ -104,7 +104,7 @@ aside{
                         border-radius: 4px;
                         align-items: center;
                         text-align: center;
-                        font-size: 16px;
+                        font-size: 14px;
                         flex-grow: 1;
                         flex-basis: 0;
                         max-width: 500px;
