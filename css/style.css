@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;700;900&display=swap");
+
 .fondo_p {
   background-image: url(/assets/imgs/background7.png);
   background-position: center;
@@ -13,7 +14,63 @@
   height: 90vh;
   z-index: -8; }
 
-.formas, .micBg, nav {
+.navMobile{
+  display: inherit;
+}
+
+#navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: fixed;
+  top: 0;
+  right: -330px;
+  height: 100vh;
+  z-index: 9;
+  width: 300px;
+  background-color: #090B0A;
+  box-shadow: 0 40px 60px rgba(0,0, 0, 0.1);
+  padding:80px 0 0 10px;
+  transition: 0.3s;
+}
+
+#navbar.active{
+  right: 0px;
+}
+#navbar li{
+  margin-bottom: 25px;
+  list-style: none;
+}
+#navbar li a {
+	display: block;
+	position: relative;
+	padding: 10px;
+	text-decoration: none;
+	color: #FFFFFF;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin: 0 5px;
+}
+#mobile{
+  display: flex;
+}
+#bar{
+  font-size: 24px;
+  cursor: pointer;
+  color:white;
+}
+#close{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  color:white;
+  font-size: 24px;
+  cursor: pointer;
+  display: initial;
+}
+
+.formas, .micBg{
   display: none; }
 
 *, *::after, *::before {
@@ -52,6 +109,29 @@ header {
   width: 200px; }
 
 @media only screen and (min-width: 1250px) {
+  #navbar li {
+    margin-bottom: 0;
+  }
+  #navbar {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position:relative;
+    top: 0;
+    right: 0;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+    padding: 0;
+    transition: 0.3s;
+  }
+  .navMobile {
+    display: none;
+  }
+  #close {
+    display: none;
+  }
   .formas, .micBg, nav {
     display: inline; }
   .fondo_p {
@@ -90,15 +170,6 @@ header {
         justify-content: space-around; }
         header nav ul li {
           list-style-type: none; }
-          header nav ul li a {
-            display: block;
-            position: relative;
-            padding: 10px;
-            text-decoration: none;
-            color: #FFFFFF;
-            font-weight: 400;
-            text-transform: uppercase;
-            margin: 0 5px; }
             header nav ul li a, header nav ul li a::after, header nav ul li a::before {
               transition: all .5s; }
             header nav ul li a:hover {

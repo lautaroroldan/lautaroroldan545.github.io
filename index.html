@@ -21,14 +21,18 @@
             <a href="index.html"><img class="white-Logo" src="/assets/imgs/white-logo.png" alt="Logo"></a>
             </div>
             <nav>
-                <ul >
+                <ul id="navbar">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="/views/sobremi.html">Sobre mí</a></li>
                     <li><a href="/views/proyectos.html">Proyectos</a></li>
                     <li><a href="/views/contacto.html">Contacto</a></li>
                     <li><a href="/views/feedback.html">Feedback</a></li>
+                    <a id="close"><ion-icon name="close-outline"></ion-icon></a>
                 </ul>
             </nav>
+            <div class="navMobile">
+                <ion-icon id="bar" name="menu-outline"></ion-icon>
+            </div>
         </header>
         <!-- cierre nav + logo -->
         <div class="fondo_p">
@@ -116,5 +120,8 @@
     <script>
     new WOW().init();
     </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="/js/bar.js"></script>
 </body>
 </html>
