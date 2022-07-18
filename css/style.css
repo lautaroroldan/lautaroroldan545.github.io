@@ -30,7 +30,12 @@ h3, h4, h5 {
 .gridContainer {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-areas: "header" "background" "section" "aside" "contact" "footer"; }
+  grid-template-areas: "header"
+ "background"
+ "section"
+ "aside"
+ "contact"
+ "footer"; }
 
 header {
   grid-area: header;
@@ -181,7 +186,7 @@ section {
   justify-content: space-evenly;
   align-items: center;
   grid-area: contact;
-  padding: 2.5em 0; }
+  padding: 2.5em 0;}
   .contacto h2 {
     font-size: 1.8rem; }
   .contacto p {
@@ -195,7 +200,9 @@ section {
     text-decoration: none;
     text-align: center; }
 
-@media only screen and (max-width: 1249px) {
+
+/* ASIDE RESPONSIVE when max-width is 1250px*/
+@media only screen and (max-width: 1250px) {
   aside {
     grid-area: aside;
     margin: 2.5em 0px; }
@@ -232,7 +239,8 @@ section {
           aside .flexAside .flexCards .cardTxtEstudio img {
             width: 24px; } }
 
-@media only screen and (min-width: 1250px) {
+/* ASIDE DISPLAY > 1251px */
+@media only screen and (min-width: 1251px) {
   .flexAside {
     margin: 3em 0;
     display: flex;
@@ -274,47 +282,48 @@ section {
   .redes a svg:hover {
     transform: rotate(360deg); } }
 
+/* END INDEX PAGE */
+
+/* PAGE ABOUT ME */
+
 .gridContainerMe {
   overflow-x: hidden; }
-
 .bgMe__Img {
   position: absolute;
   width: 100%;
   top: 35%;
   z-index: 4; }
-  .bgMe__Img .bg_CaroImg {
+.bgMe__Img .bg_CaroImg {
     display: flex;
     justify-content: center; }
-    .bgMe__Img .bg_CaroImg img {
+.bgMe__Img .bg_CaroImg img {
       border-radius: 50%;
       border: 1px solid #FFF;
       width: 220px; }
-  .bgMe__Img .bg_CaroText {
+.bgMe__Img .bg_CaroText {
     display: flex;
     justify-content: center;
     flex-direction: column;
     color: white;
     text-align: center; }
-
 .sectionMe {
   background-color: #3C3C3C;
-  margin-top: 7em;
+  margin-top: 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%; }
-  .sectionMe h2 {
+.sectionMe h2 {
     color: #fff;
     text-transform: capitalize; }
-
 .cardM__Hb {
   display: flex;
   flex-direction: column;
   width: 90%;
   align-items: center;
   justify-content: center; }
-  .cardM__Hb .card__Hb {
+.cardM__Hb .card__Hb {
     display: flex;
     flex-direction: row;
     background-color: #FFF;
@@ -324,37 +333,52 @@ section {
     flex-basis: 0;
     margin-bottom: 1.4em;
     max-width: 1050px; }
-    .cardM__Hb .card__Hb img {
+.cardM__Hb .card__Hb img {
       width: 150px;
       flex-grow: 1;
       flex-basis: 0; }
-    .cardM__Hb .card__Hb p {
+.cardM__Hb .card__Hb p {
       flex-grow: 1;
       flex-basis: 0;
       padding: 0 0.8em; }
-
 .asideMe {
   display: flex;
   margin: 2em 0; }
-  .asideMe iframe {
-    border-radius: 15px;
+.asideMe iframe {
+    border-radius: 6px;
     margin-left: auto;
     margin-right: auto;
-    width: 60%; }
-
+    width: 320px; }
 body {
   overflow-x: hidden; }
 
-@media only screen and (min-width: 1251px) {
-  .asideMe {
-    display: flex;
-    margin: 2em 0; }
+/* RESPONSIVE DISPLAY > 600px  */
+
+@media only screen and (min-width: 600px) {
     .asideMe iframe {
-      border-radius: 20px;
+      border-radius: 4px;
       margin-left: auto;
       margin-right: auto;
       width: 560px;
       height: 340px; }
+}
+
+@media (min-width:200px) and (max-width:600px){
+  .cardM__Hb .card__Hb {
+    flex-direction: column;
+  }
+  .cardM__Hb .card__Hb img {
+    width: 100%;
+  }
+  .cardM__Hb .card__Hb p {
+    padding: 1em 0.8em;
+  }
+  .sectionMe h2 {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width:800px) {
   .bgMe__Img {
     display: flex;
     align-items: center;
@@ -364,4 +388,5 @@ body {
     .bgMe__Img .bg_CaroText h2 {
       font-size: 2.4rem; }
   body {
-    overflow-x: hidden; } }
+    overflow-x: hidden; }
+}
