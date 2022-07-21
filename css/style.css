@@ -121,7 +121,8 @@ header {
     top: 0;
     right: 0;
     height: auto;
-    width: auto;
+    width: 100%;
+    max-width: 100%;
     background-color: transparent;
     box-shadow: none;
     padding: 0;
@@ -266,11 +267,19 @@ section {
     margin: 0.6em 0.8em 1em; }
   .contacto .btn {
     padding: 0.4em 1.4em;
-    background-color: #FFFFFF;
+    background-color: #f72585;
     border-radius: 3px;
-    color: #3f13a4;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #fff;
     text-decoration: none;
+    transition: 0.3s;
     text-align: center; }
+
+.contacto .btn:hover{
+color: #f72585;
+background-color: #fff;
+}
 
 
 /* ASIDE RESPONSIVE when max-width is 1250px*/
